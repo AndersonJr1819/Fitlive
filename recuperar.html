@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fit Live | Recuperação de senha</title>
+        <link rel="stylesheet" href="styles/styles/recuperar.css">
+        <script src="js/recuperar.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.css">
+          <link rel="shortcut icon" href="img/Logo.jpeg" type="image/x-icon">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#">
+                    <img src="img/Logo.jpeg" alt="Logo Fit Live">
+                    <span>Fit Live</span>
+                </a>
+            </nav>
+            <p>Alimentação saudável e prática para o seu dia a dia.</p>
+        </header>
+
+        <main>
+            <section>
+                <h1>Recupere sua senha</h1>
+                <p>Digite seu e-mail e enviaremos as instruções para recuperar o acesso à sua conta.</p>
+            </section>
+
+            <form>
+                <fieldset>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <div>
+                            <i data-lucide="mail" aria-hidden="true"></i>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div class="form-feedback" aria-live="polite"></div>
+
+                    <button type="submit">Enviar instruções</button>
+                </fieldset>
+            </form>
+
+            <div class="success-message" hidden>
+                <i data-lucide="check-circle" aria-hidden="true"></i>
+                <p>Instruções enviadas com sucesso! Verifique sua caixa de entrada.</p>
+            </div>
+
+            <div>
+                <a href="index.html">Voltar para o login</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Fit Live. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
