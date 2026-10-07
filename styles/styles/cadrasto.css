@@ -1,0 +1,274 @@
+@import url(../global.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+    color: var(--text-primary);
+    font-family: var(--font-family, sans-serif);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+}
+
+header {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+header nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+header nav a img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+header p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+main {
+    width: 100%;
+    max-width: 480px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-large, 16px);
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+main section h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+main section p {
+    font-size: 14px;
+    color: var(--text-secondary);
+}
+
+form fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.profile-avatar-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.profile-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 2px dashed var(--border);
+    background: var(--background);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.profile-avatar i {
+    color: var(--text-secondary);
+    font-size: 20px;
+    z-index: 1;
+}
+
+.avatar-upload-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.avatar-upload-info label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.avatar-upload-info label:hover {
+    color: var(--primary);
+}
+
+.avatar-upload-info input[type="file"] {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+form fieldset > div:not(.profile-avatar-container) {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+form fieldset > div > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+form fieldset > div > div i:first-child {
+    position: absolute;
+    left: 14px;
+    color: var(--text-secondary);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    height: 48px;
+    padding: 0 16px 0 44px;
+    background: var(--background);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-medium, 8px);
+    color: var(--text-primary);
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+form input[type="password"] {
+    padding-right: 44px;
+}
+
+form input::placeholder {
+    color: var(--text-secondary);
+}
+
+form input:focus {
+    border-color: var(--primary);
+}
+
+form fieldset > div > div button {
+    position: absolute;
+    right: 14px;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+form fieldset > div > div button:hover {
+    color: var(--text-primary);
+}
+
+form button[type="submit"] {
+    width: 100%;
+    height: 48px;
+    background: var(--primary);
+    color: #ffffff;
+    border: none;
+    border-radius: var(--radius-medium, 8px);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 8px;
+    transition: opacity 0.2s;
+}
+
+form button[type="submit"]:hover {
+    opacity: 0.9;
+}
+
+main > div:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+main > div:last-child p {
+    color: var(--text-secondary);
+}
+
+main > div:last-child a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+main > div:last-child a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    width: 100%;
+    max-width: 480px;
+    text-align: center;
+    margin-top: 24px;
+}
+
+footer p {
+    font-size: 12px;
+    color: var(--text-secondary);
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    main {
+        padding: 24px 16px;
+    }
+}

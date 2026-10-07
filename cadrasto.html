@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fit Live | Cadastro</title>
+         <link rel="shortcut icon" href="img/Logo.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="styles/styles/cadrasto.css">
+        <script src="js/cadrasto.js" defer></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <a href="#">
+                    <img src="img/Logo.jpeg" alt="Logo Fit Live">
+                    <span>Fit Live</span>
+                </a>
+            </nav>
+            <p>Alimentação saudável e prática para o seu dia a dia.</p>
+        </header>
+
+        <main>
+            <section>
+                <h1>Crie sua conta</h1>
+                <p>Preencha os dados abaixo para começar sua jornada saudável com o Fit Live.</p>
+            </section>
+
+            <form>
+                <fieldset>
+                    <div class="profile-avatar-container">
+                        <div class="profile-avatar">
+                            <img src="" alt="Pré-visualização da foto de perfil">
+                            <i data-lucide="camera" aria-hidden="true"></i>
+                        </div>
+                        <div class="avatar-upload-info">
+                            <label for="avatar-input">Escolher foto de perfil</label>
+                            <input type="file" id="avatar-input" name="avatar" accept="image/*">
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="name">Nome completo</label>
+                        <div>
+                            <i data-lucide="user" aria-hidden="true"></i>
+                            <input type="text" id="name" name="name" placeholder="Digite seu nome completo" autocomplete="name" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail</label>
+                        <div>
+                            <i data-lucide="mail" aria-hidden="true"></i>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" autocomplete="email" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="password">Senha</label>
+                        <div>
+                            <i data-lucide="lock" aria-hidden="true"></i>
+                            <input type="password" id="password" name="password" placeholder="Sua senha" autocomplete="new-password" required>
+                            <button type="button" aria-label="Mostrar ou ocultar senha">
+                                <i data-lucide="eye" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="confirm-password">Confirmar senha</label>
+                        <div>
+                            <i data-lucide="lock" aria-hidden="true"></i>
+                            <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirme sua senha" autocomplete="new-password" required>
+                            <button type="button" aria-label="Mostrar ou ocultar confirmação de senha">
+                                <i data-lucide="eye" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit">Cadastrar</button>
+                </fieldset>
+            </form>
+
+            <div>
+                <p>Já possui uma conta?</p>
+                <a href="home.html">Entrar</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Fit Live. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>
